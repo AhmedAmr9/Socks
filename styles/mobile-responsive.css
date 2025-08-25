@@ -1,0 +1,104 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header-professional {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-items {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .section-title {
+    font-size: 1.3rem; /* Adjust title size */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-professional {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .about-text {
+    padding: 0 10px; /* Add padding for smaller screens */
+    font-size: 0.8rem;
+  }
+
+  /* .menu-item h3 { */
+    /* font-size: 1.2rem; Adjust menu item title size */
+  /* } */
+}
+
+
+/* ✅ Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-card {
+    width: 250px;
+    /* ✅ عرض ثابت */
+    height: 90px;
+    /* ✅ مربع */
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 3px 10px rgb(250, 219, 69);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+  }
+
+  .contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .contact-card span {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+
+     /* Footer */
+     footer {
+       background: #FADB45;
+       color: black;
+       padding: 30px 0 20px;
+       text-align: center;
+     }
+  
+     .social-links a {
+       color: black;
+       font-size: 0.5rem;
+       transition: color 0.3s;
+     }
+  
+     .social-links a:hover {
+       color: white;
+     }
+  
+     .copyright {
+       margin-top: 30px;
+       font-size: 0.7rem;
+       opacity: 0.5;
+     }
+
+}
