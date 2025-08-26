@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Instructions() {
@@ -17,23 +19,24 @@ export default function Instructions() {
 
         {/* Images side by side */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20">
-          <Image
-            src="/say.jpg"
-            alt="Instructions - What to say"
-            width={350}   // required
-            height={350}  // required (can be any approx size)
-            className="rounded-3xl object-cover w-[200px] md:w-[350px]"
-          />
-          <Image
-            src="/dontsay.jpg"
-            alt="Instructions - What not to say"
-            width={350}
-            height={350}
-            className="rounded-3xl object-cover w-[205px] md:w-[350px]"
-          />
+          <div className="relative w-[200px] md:w-[350px] h-[350px] md:h-[570px]">
+            <Image
+              src="/say.jpg"
+              alt="Instructions - What to say"
+              fill
+              className="rounded-3xl object-cover"
+            />
+          </div>
+          <div className="relative w-[205px] md:w-[350px] h-[350px] md:h-[570px]">
+            <Image
+              src="/dontsay.jpg"
+              alt="Instructions - What not to say"
+              fill
+              className="rounded-3xl object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
   );
-  
 }

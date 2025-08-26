@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function Hero() {
@@ -7,9 +8,8 @@ export default function Hero() {
     "/Main.mp4",
     "/Main2.mp4",
     "/Main3.mp4",
-    // "/Main4.mp4",
-    "/Main5.mp4", // video slides
-    "/Main6.PNG", // video slides
+    "/Main5.mp4", 
+    "/Main6.PNG",
   ]
 
   const [current, setCurrent] = useState(0)
@@ -44,7 +44,7 @@ export default function Hero() {
         isVideo ? "bg-[#FFF8E1]" : "bg-black"
       }`}
     >
-      {/* Background Layer (blurred) */}
+      {/* Background Layer */}
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
           fade ? "opacity-100" : "opacity-0"
@@ -60,19 +60,17 @@ export default function Hero() {
             className="w-full h-full object-cover blur-lg scale-110"
           />
         ) : (
-          <div
-            className="w-full h-full blur-lg scale-110"
-            style={{
-              backgroundImage: `url('${slides[current]}')`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            src={slides[current]}
+            alt="Slide background"
+            fill
+            className="object-cover blur-lg scale-110"
+            priority
+          />
         )}
       </div>
 
-      {/* Foreground Slide (clean video or image) */}
+      {/* Foreground Slide */}
       <div className="relative z-10 flex items-center justify-center max-h-full max-w-full">
         {isVideo ? (
           <video
@@ -87,27 +85,21 @@ export default function Hero() {
           <Image
             src={slides[current]}
             alt="Slide"
-            width={1920} 
-            height={1080} 
+            width={1920}
+            height={1080}
             className="max-h-full max-w-full object-contain"
+            priority
           />
         )}
       </div>
 
-      {/* Text + Button (only on images if you want cleaner video look) */}
+      {/* Call-to-action Button */}
       {!isVideo && (
-        // <div className="absolute z-20 text-center text-white px-4">
         <div className="absolute bottom-40 left-1/2 -translate-x-1/2 z-20">
-          {/* <h1 className="text-4xl md:text-6xl font-bold mb-4 font-pacifico">
-            Welcome to Socks Specialty Coffee
-          </h1>
-          <p className="text-lg md:text-2xl mb-8">
-            Brewing happiness, one cup at a time ☕
-          </p> */}
           <button
             onClick={scrollToMenu}
-            // className="bg-blue-600 text-white px-4 py-2 rounded-full animate-bounce-once">
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full animate-bounce-loop">
+            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full animate-bounce-loop"
+          >
             See Our Menu
           </button>
         </div>

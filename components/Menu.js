@@ -85,6 +85,7 @@ export default function Menu() {
                 width={300}   // approximate
                 height={200}  // approximate
                 className="w-full h-24 md:h-48 object-cover"
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 300px"
               />
               <div className="p-1 md:p-4 flex flex-col flex-1">
                 <h3 className="text-xs md:text-xl font-semibold text-yellow-500 mb-1 md:mb-2 text-center">

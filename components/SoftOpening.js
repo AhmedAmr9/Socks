@@ -26,6 +26,7 @@ export default function SoftOpening() {
           width={350}
           height={350}
           className="rounded-3xl object-cover w-[225px] md:w-[350px] order-1 md:order-2"
+          sizes="(max-width: 768px) 100vw, 350px"
         />
 
         {/* Soft-Opening2 (second on mobile, first/left on desktop) */}
@@ -35,6 +36,7 @@ export default function SoftOpening() {
           width={350}
           height={350}
           className="rounded-3xl object-cover w-[200px] md:w-[350px] order-2 md:order-1"
+          sizes="(max-width: 768px) 100vw, 350px"
         />
       </div>
     </section>

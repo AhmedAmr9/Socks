@@ -3,31 +3,32 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { ChevronDown, Play, Coffee, Sparkles, ArrowDown } from 'lucide-react'
 
-const slides = [
-  {
-    type: 'video',
-    src: '/Main3.mp4',
-    title: 'Premium Coffee Experience',
-    subtitle: 'Crafted with passion, served with excellence'
-  },
-  {
-    type: 'image',
-    src: '/HeroSection/Main7.jpg',
-    title: 'Socks Coffee',
-    subtitle: 'Your daily dose of happiness'
-  },
-  {
-    type: 'image',
-    src: '/HeroSection/Main5.jpg',
-    title: 'Artisan Coffee',
-    subtitle: 'Where every cup tells a story'
-  },
-]
 export default function HeroProfessional() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
   const videoRef = useRef(null)
 
+  // Slides declared inside the component so it can be used safely in useEffect dependencies
+  const slides = [
+    {
+      type: 'video',
+      src: '/Main3.mp4',
+      title: 'Premium Coffee Experience',
+      subtitle: 'Crafted with passion, served with excellence'
+    },
+    {
+      type: 'image',
+      src: '/HeroSection/Main7.jpg',
+      title: 'Socks Coffee',
+      subtitle: 'Your daily dose of happiness'
+    },
+    {
+      type: 'image',
+      src: '/HeroSection/Main5.jpg',
+      title: 'Artisan Coffee',
+      subtitle: 'Where every cup tells a story'
+    },
+  ]
 
   useEffect(() => {
     setIsLoaded(true)
@@ -58,9 +59,7 @@ export default function HeroProfessional() {
     }, 5000)
 
     return () => clearTimeout(timer)
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSlide]) // ✅ only depends on currentSlide
+  }, [currentSlide, slides])
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
