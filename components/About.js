@@ -1,18 +1,11 @@
 import { Heart } from "lucide-react"
 import Image from "next/image";
-import { Pacifico } from 'next/font/google'
-
-const pacifico = Pacifico({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-pacifico',
-})
 
 export default function About() { 
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2 className="section-title text-lg md:text-3xl font-merriweather text-[#5D4037]">
+        <h2 className="section-title text-xl md:text-3xl font-merriweather text-[#5D4037]">
           Our Story
         </h2>
         <div className="about-content">
