@@ -12,13 +12,13 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2 className="section-title text-sm md:text-3xl font-pacifico text-[#5D4037]">
+        <h2 className="section-title text-lg md:text-3xl font-merriweather text-[#5D4037]">
           Our Story
         </h2>
         <div className="about-content">
           <div className="about-text">
             <div className="flex items-center gap-4 mb-6">
-              <p className="text-sm md:text-2xl font-pacifico text-[#5D4037]">
+              <p className="text-lg md:text-2xl font-merriweather text-[#5D4037]">
                 Different Hands .. Same Love
               </p>
               <div className="flex items-center gap-1 mb-0 md:mb-0">

@@ -10,7 +10,7 @@ export default function Instructions() {
     >
       <div className="container mx-auto text-center">
         {/* Text above images */}
-        <h3 className="text-xl md:text-3xl font-bold text-red-400 font-pacifico mb-4">
+        <h3 className="text-2xl md:text-3xl font-bold text-red-400 font-merriweather mb-4">
           Instructions
         </h3>
         <p className="text-sm md:text-base text-gray-700 mb-10">

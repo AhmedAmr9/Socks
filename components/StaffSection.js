@@ -85,7 +85,7 @@ export default function StaffSection() {
 
   return (
     <section id='team' className="py-10 bg-white text-center rounded shadow-md relative select-none">
-      <h2 className="text-xl md:text-3xl font-semibold text-yellow-400 mb-10 font-pacifico">
+      <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400 mb-10 font-merriweather">
         Meet Socks Team
       </h2>
 

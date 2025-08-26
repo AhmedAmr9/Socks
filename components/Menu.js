@@ -56,7 +56,7 @@ export default function Menu() {
 
   return (
     <section className="p-8 md:p-16 bg-white" id="menu">
-      <h2 className="text-2xl md:text-3xl font-pacifico font-semibold text-yellow-400 text-center mb-8 md:mb-12">
+      <h2 className="text-2xl md:text-3xl font-merriweather font-semibold text-yellow-400 text-center mb-8 md:mb-12">
         Soft Opening Menu
       </h2>
 

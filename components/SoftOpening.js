@@ -5,7 +5,7 @@ export default function SoftOpening() {
     <section className="py-16 text-center bg-[#FFF8E1] text-gray rounded shadow-md">
       {/* Heading with image beside */}
       <div className="flex flex-row md:flex-row items-center justify-center gap-4 mb-20">
-        <h2 className="text-xl md:text-3xl font-semibold text-yellow-400 font-pacifico">
+        <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400 font-merriweather">
           Soft Opening Now
         </h2>
         <Image
