@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2 className="section-title text-xl md:text-3xl font-merriweather text-[#5D4037]">
+        <h2 className="section-title text-2xl md:text-3xl font-pacifico text-[#5D4037]">
           Our Story
         </h2>
         <div className="about-content">
