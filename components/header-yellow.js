@@ -110,7 +110,7 @@ export default function HeaderYellow() {
 
                   {/* Social Links */}
           <div className="flex space-x-4 pt-6 border-t border-gray-200">
-            <a href="https://instagram.com/socks.coffee" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600">
+            <a href="https://www.instagram.com/socks__coffee" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600">
               <Instagram className="w-4 h-4" />
             </a>
             <a href="https://tiktok.com/@socks.coffee" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600">
