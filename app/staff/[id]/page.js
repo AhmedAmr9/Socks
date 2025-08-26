@@ -2,9 +2,10 @@ import Image from "next/image"
 import fs from "fs"
 import path from "path"
 import HeaderYellow from "/components/header-yellow"
-import Footer from '/components/Footer'
-import BackToTeamButton from '/components/BackToTeamButton'
-import Gallery from '/components/Gallery'
+import Footer from "/components/Footer"
+import BackToTeamButton from "/components/BackToTeamButton"
+import Gallery from "/components/Gallery"
+
 
 export default function StaffProfile({ params }) {
   const { id } = params
