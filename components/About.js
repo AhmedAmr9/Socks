@@ -18,7 +18,7 @@ export default function About() {
         <div className="about-content">
           <div className="about-text">
             <div className="flex items-center gap-4 mb-6">
-              <p className="text-sm md:text-2xl font-pacifico text-[#5D4037]">
+              <p className="text-lg md:text-2xl font-pacifico text-[#5D4037]">
                 Different Hands .. Same Love
               </p>
               <div className="flex items-center gap-1 mb-0 md:mb-0">
