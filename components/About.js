@@ -72,7 +72,7 @@ export default function About() {
 
           <div className="about-image">
             <img
-              src="/about.jpg"
+              src="/About.jpg"
               alt="Interior of Coffee Crust showing cozy seating area with wooden tables, exposed brick walls, and barista preparing coffee"
               width={500}
               height={300}
