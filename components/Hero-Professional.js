@@ -1,15 +1,10 @@
 'use client'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import Image from 'next/image'
 import { ChevronDown, Play, Coffee, Sparkles, ArrowDown } from 'lucide-react'
 
 export default function HeroProfessional() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [isLoaded, setIsLoaded] = useState(false)
-  const videoRef = useRef(null)
-
-  // Slides declared inside the component so it can be used safely in useEffect dependencies
-  const slides = [
+  const slides = useMemo(() => [
     {
       type: 'video',
       src: '/Main3.mp4',
@@ -28,7 +23,11 @@ export default function HeroProfessional() {
       title: 'Artisan Coffee',
       subtitle: 'Where every cup tells a story'
     },
-  ]
+  ], []) // empty array → memoized once
+
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false)
+  const videoRef = useRef(null)
 
   useEffect(() => {
     setIsLoaded(true)
@@ -53,13 +52,13 @@ export default function HeroProfessional() {
       }
     }
 
-    // If it's an image → move on after 5s
     const timer = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [currentSlide, slides])
+  }, [currentSlide, slides]) // ✅ now safe
+
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
