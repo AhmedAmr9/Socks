@@ -12,16 +12,16 @@ const slides = [
   },
   {
     type: 'image',
+    src: '/HeroSection/Main7.jpg',
+    title: 'Socks Coffee',
+    subtitle: 'Your daily dose of happiness'
+  },
+  {
+    type: 'image',
     src: '/HeroSection/Main5.jpg',
     title: 'Artisan Coffee',
     subtitle: 'Where every cup tells a story'
   },
-  {
-    type: 'image',
-    src: '/HeroSection/Main.png',
-    title: 'Socks Coffee',
-    subtitle: 'Your daily dose of happiness'
-  }
 ]
 export default function HeroProfessional() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -169,12 +169,12 @@ export default function HeroProfessional() {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-4 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
               index === currentSlide
                 ? 'bg-white scale-125'
                 : 'bg-white/50 hover:bg-white/70'

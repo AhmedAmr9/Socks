@@ -1,9 +1,9 @@
-'use client'
-import { useRef, useState, useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import staff from '../data/staff'
+"use client"
+import { useRef, useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import staff from "../data/staff"
 
 export default function StaffSection() {
   const scrollRef = useRef(null)
@@ -122,7 +122,7 @@ export default function StaffSection() {
       <Link key={member.id} href={`/staff/${member.id}`} className="group">
         <div className="flex flex-col items-center flex-shrink-0 transition-transform duration-300 group-hover:scale-105 p-4 rounded-2xl">
           <div className="relative">
-            <div className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full overflow-hidden border-4 border-gray-400 shadow-md transition-all duration-300 group-hover:border-yellow-500 group-hover:shadow-xl">
+            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[130px] rounded-full overflow-hidden border-4 border-gray-400 shadow-md transition-all duration-300 group-hover:border-yellow-500 group-hover:shadow-xl">
               <Image
                 src={member.avatar}
                 alt={member.name}

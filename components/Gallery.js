@@ -101,4 +101,5 @@ function FullscreenImage({ src, alt }) {
       />
     </div>
   );
+  
 }
