@@ -22,7 +22,7 @@ export default function About() {
 
             <p>- Every one of us has a story — and every story has a beginning.</p>
             <br />
-            <p>- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.`</p>
+            <p>- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.</p>
             <br />
             <p>- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.</p>
             <br />
