@@ -1,12 +1,12 @@
-import HeaderProfessional from '@/components/Header-Professional'
-import HeroProfessional from '@/components/Hero-Professional'
-import About from '@/components/About'
-import Menu from '@/components/Menu'
-import StaffSection from '@/components/StaffSection'
-import SoftOpening from '@/components/SoftOpening'
-import Footer from '@/components/Footer'
-import Instructions from '@/components/Instructions'
-import Contact from '../components/Contact'
+import HeaderProfessional from "@/components/Header-Professional"
+import HeroProfessional from "@/components/Hero-Professional"
+import About from "@/components/About"
+import Menu from "@/components/Menu"
+import StaffSection from "@/components/StaffSection"
+import SoftOpening from "@/components/SoftOpening"
+import Footer from "@/components/Footer"
+import Instructions from "@/components/Instructions"
+import Contact from "../components/Contact"
 
 export default function Home() {
     const Divider = () => (

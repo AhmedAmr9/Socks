@@ -20,17 +20,17 @@ export default function About() {
               </div>
             </div>
 
-            <p>{`- Every one of us has a story — and every story has a beginning.`}</p>
+            <p>- Every one of us has a story — and every story has a beginning.</p>
             <br />
-            <p>{`- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.`}</p>
+            <p>- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.`</p>
             <br />
-            <p>{`- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.`}</p>
+            <p>- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.</p>
             <br />
-            <p>{`- A place where coffee isn't just consumed, it's experienced.`}</p>
+            <p>- A place where coffee is not just consumed, it is experienced.</p>
             <br />
-            <p>{`- A place where you're not just served by anyone, but by real heroes who share a smile with every cup.`}</p>
+            <p>- A place where you are not just served by anyone, but by real heroes who share a smile with every cup.</p>
             <br />
-            <p>{`- Here at Socks, every cup of coffee is brewed with passion and served by hands filled with love, strength, and determination.`}</p>
+            <p>- Here at Socks, every cup of coffee is brewed with passion and served by hands filled with love, strength, and determination.</p>
           </div>
 
           <div className="about-image">
