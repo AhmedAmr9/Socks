@@ -87,6 +87,8 @@ export default function Hero() {
           <img
             src={slides[current]}
             alt="Slide"
+            width={1920} 
+            height={1080} 
             className="max-h-full max-w-full object-contain"
           />
         )}

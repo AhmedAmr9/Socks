@@ -125,7 +125,7 @@ export default function StaffSection() {
             <div className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full overflow-hidden border-4 border-gray-400 shadow-md transition-all duration-300 group-hover:border-yellow-500 group-hover:shadow-xl">
               <Image
                 src={member.avatar}
-                alt={member.id}
+                alt={member.name}
                 width={200}
                 height={200}
                 className="object-cover w-full h-full"

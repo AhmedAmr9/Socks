@@ -31,7 +31,7 @@ const staff = [
   { 
     id: 'Youssef-Khalid', 
     name: 'Youssef Khalid', 
-    avatar: '/staff/Youssef Khalid.png',
+    avatar: '/staff/Youssef-Khalid.png',
     role: 'Operations Manager',
     bio: 'Ensuring smooth operations and exceptional customer service. Youssef Khalid manages the day-to-day operations with efficiency and a warm smile.',
     videos: [
@@ -58,7 +58,7 @@ const staff = [
   { 
     id: 'Youssef-Medhat', 
     name: 'Youssef Medhat', 
-    avatar: '/staff/Youssef Medhat.png',
+    avatar: '/staff/Youssef-Medhat.png',
     role: 'Marketing Lead',
     bio: 'The storyteller behind Socks Coffee\'s brand. Youssef Medhat captures our moments and shares our passion with the world through creative content.',
     videos: [
