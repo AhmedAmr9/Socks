@@ -158,7 +158,7 @@ export default function Menu() {
         {/* Main menu image on top */}
         <div className="w-full flex justify-center">
           <Image
-            src="/menu.jpg"
+            src="/Menu.jpg"
             alt="Menu"
             width={600}   // required
             height={400}  // required

@@ -57,7 +57,7 @@ const staff = [
   },
   { 
     id: 'Youssef-Medhat', 
-    name: 'Youssef Medhat', 
+    name: 'Youssef-Medhat', 
     avatar: '/staff/Youssef-Medhat.png',
     role: 'Marketing Lead',
     bio: 'The storyteller behind Socks Coffee\'s brand. Youssef Medhat captures our moments and shares our passion with the world through creative content.',
