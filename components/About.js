@@ -1,17 +1,24 @@
 import { Heart } from "lucide-react"
 import Image from "next/image";
+import { Pacifico } from 'next/font/google'
+
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-pacifico',
+})
 
 export default function About() { 
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2 className="section-title text-sm md:text-3xl font-semibold text-[#5D4037] font-pacifico">
+        <h2 className="section-title text-sm md:text-3xl font-pacifico text-[#5D4037]">
           Our Story
         </h2>
         <div className="about-content">
           <div className="about-text">
             <div className="flex items-center gap-4 mb-6">
-              <p className="text-sm md:text-2xl text-[#5D4037] font-pacifico">
+              <p className="text-sm md:text-2xl font-pacifico text-[#5D4037]">
                 Different Hands .. Same Love
               </p>
               <div className="flex items-center gap-1 mb-0 md:mb-0">
@@ -20,17 +27,17 @@ export default function About() {
               </div>
             </div>
 
-            <p>- Every one of us has a story — and every story has a beginning.</p>
+            <p>{`- Every one of us has a story — and every story has a beginning.`}</p>
             <br />
-            <p>- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.</p>
+            <p>{`- Ours began with something as simple as a coffee bean, yet it carried within it a world of warmth and hope.`}</p>
             <br />
-            <p>- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.</p>
+            <p>{`- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.`}</p>
             <br />
-            <p>- A place where coffee is not just consumed, it is experienced.</p>
+            <p>{`- A place where coffee isn't just consumed, it's experienced.`}</p>
             <br />
-            <p>- A place where you are not just served by anyone, but by real heroes who share a smile with every cup.</p>
+            <p>{`- A place where you're not just served by anyone, but by real heroes who share a smile with every cup.`}</p>
             <br />
-            <p>- Here at Socks, every cup of coffee is brewed with passion and served by hands filled with love, strength, and determination.</p>
+            <p>{`- Here at Socks, every cup of coffee is brewed with passion and served by hands filled with love, strength, and determination.`}</p>
           </div>
 
           <div className="about-image">
