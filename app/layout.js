@@ -1,5 +1,4 @@
 import './globals.css'
-import '../styles/globals.css'
 import '../styles/mobile-responsive.css'
 import '../styles/professional-globals.css'
 import { Pacifico, Roboto } from 'next/font/google'
