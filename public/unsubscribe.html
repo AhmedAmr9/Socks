@@ -52,5 +52,23 @@
     </p>
     <a href="https://socks-two.vercel.app" class="btn">Back to Home</a>
   </div>
+
+  <!-- Hidden iframe + Google Form submission -->
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+  <form id="googleForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdF6qeDS-Ox4ps2PdzIhICnFh8U_LAEmCD_jmmfQOoYNOMlOA/formResponse" method="POST" target="hidden_iframe">
+    <input type="hidden" name="entry.1596235777" id="emailField" value="">
+  </form>
+
+  <script>
+    // احصل على البريد الإلكتروني من الرابط (query param)
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('email');
+
+    if(email) {
+      document.getElementById('emailField').value = email;
+      document.getElementById('googleForm').submit();
+    }
+  </script>
+
 </body>
 </html>
