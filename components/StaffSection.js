@@ -125,7 +125,7 @@ export default function StaffSection() {
             <div className="w-[80px] h-[80px] md:w-[130px] md:h-[130px] rounded-full overflow-hidden border-4 border-gray-400 shadow-md transition-all duration-300 group-hover:border-yellow-500 group-hover:shadow-xl">
               <Image
                 src={member.avatar}
-                alt={member.name}
+                alt={member.id}
                 width={200}
                 height={200}
                 className="object-cover w-full h-full"
@@ -159,11 +159,11 @@ export default function StaffSection() {
      <div className="max-w-3xl mx-auto mt-12 text-center px-6">
        <p className="text-sm md:text-xl text-gray-700 leading-relaxed mb-4">
          <span className="font-semibold text-yellow-500">Socks Team</span> are the heart and soul of this place. 
-         They aren't just employees — they are artists who craft happiness, 
+         They aren&apos;t just employees — they are artists who craft happiness, 
          painting a smile on your face before you even taste your coffee.
        </p>
        <p className="text-sm md:text-xl text-gray-700 leading-relaxed mb-4">
-         Why <span className="arial-hidden"></span><span className="font-semibold text-yellow-500">"Socks"</span> ? Because we believe that being different is the secret to beauty, 
+         Why <span className="arial-hidden"></span><span className="font-semibold text-yellow-500">&quot;Socks&quot;</span> ? Because we believe that being different is the secret to beauty, 
          just like a pair of colorful, mismatched socks that brighten up your day.
        </p>
        <p className="text-sm md:text-xl text-gray-700 leading-relaxed">

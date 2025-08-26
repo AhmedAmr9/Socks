@@ -36,7 +36,7 @@ export default function StaffProfile({ params }) {
           />
         </div>
 
-        <h1 className="text-xl md:text-3xl font-bold text-center text-yellow-500 mb-20">
+        <h1 className="text-xl md:text-2xl font-bold text-center text-yellow-500 mb-20">
           {id}'s Profile
         </h1>
 

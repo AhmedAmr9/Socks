@@ -435,10 +435,11 @@ export default function HeaderProfessional() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-4">
               <Image 
-                src="/main6.png" 
+                src="/Logo.png" 
                 alt="Socks Logo" 
                 width={40} 
                 height={40} 
+                priority
                 className="w-10 h-10"
               />
               <span
@@ -468,7 +469,7 @@ export default function HeaderProfessional() {
             {/* Desktop Social Links */}
             <div className="hidden md:flex items-center space-x-4">
               {/* Instagram */}
-              <a href="https://instagram.com/socks.coffee" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.instagram.com/socks__coffee" target="_blank" rel="noopener noreferrer" 
                  className={`transition-colors duration-300 ${
                    isScrolled ? 'text-gray-700 hover:text-amber-600' : 'text-white hover:text-amber-300'
                  }`}>

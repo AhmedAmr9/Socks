@@ -20,14 +20,14 @@ export default function About() {
                     <br></br>
                     <p>- In a fast-paced world where everyone is always rushing, we dreamed of creating a space where time could pause — even if just for a moment.</p>
                     <br></br>
-                    <p>- A place where coffee isn't just consumed, it's experienced.</p>
+                    <p>- A place where coffee isn&apos;t just consumed, it&apos;s experienced.</p>
                     <br></br>
-                    <p>- A place where you're not just served by anyone, but by real heroes who share a smile with every cup.</p>
+                    <p>- A place where you&apos;re not just served by anyone, but by real heroes who share a smile with every cup.</p>
                     <br></br>
                     <p>- Here at Socks, every cup of coffee is brewed with passion and served by hands filled with love, strength, and determination.</p>
                 </div>
                 <div className="about-image">
-                    <img src="/about.jpg" alt="Interior of Coffee Crust showing cozy seating area with wooden tables, exposed brick walls, and barista preparing coffee"/>
+                    <img src="/about.jpg" alt="Interior of Coffee Crust showing cozy seating area with wooden tables, exposed brick walls, and barista preparing coffee" width={500} height={300} />
                 </div>
             </div>
         </div>

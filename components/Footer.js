@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export default function Footer() {
   const [status, setStatus] = useState(null)
@@ -72,7 +73,14 @@ export default function Footer() {
     <footer className="custom-footer">
       {/* Logo */}
       <div className="footer-logo mb-8">
-        <img src="/Logo.png" alt="Socks Coffee Logo" className="footer-logo-img" />
+       <Image
+  src="/Logo.png"
+  alt="Socks Coffee Logo"
+  width={120}   // تقدر تتحكم في الحجم
+  height={120}
+  className="footer-logo-img"
+/>
+
       </div>
 
       {/* Subscribe Section */}
